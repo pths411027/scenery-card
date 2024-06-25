@@ -1,0 +1,47 @@
+.container {
+  padding-top: 100px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.cards_container {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.container:hover .card {
+  filter: none;
+}
+.card {
+  height: 400px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  width: 600px;
+  filter: none;
+}
+.un_hover_card {
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.img {
+  width: 300px;
+}
