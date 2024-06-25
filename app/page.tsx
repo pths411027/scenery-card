@@ -12,6 +12,7 @@ export default function Home() {
           const isHoverCondition = hoverIndex !== -1 && hoverIndex !== index;
           return (
             <div
+              key={item}
               className={styles.card}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(-1)}
